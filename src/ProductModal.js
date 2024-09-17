@@ -16,6 +16,7 @@ function ProductModal({ product, onClose }) {
       <div className="modal-content" ref={modalRef} onClick={(e) => e.stopPropagation()}>
         <h2>{product.name}</h2>
         <img src={product.img} alt={product.name}/>
+        <hr />
         <p><strong>Sinopse:</strong> {product.description}</p>
         <p><strong>Preço:</strong> ${product.price}</p>
         <button onClick={onClose}>Fechar</button>

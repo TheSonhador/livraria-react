@@ -1,19 +1,63 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif; /* Tipografia moderna */
   text-align: center;
+  background-color: #87b1e7; /* Cor de fundo suave */
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #86eee9;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
 }
 
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: center; /* Centralizar os itens */
+  gap: 30px;
 }
 
 .product-item {
+  background-color: white;
   border: 1px solid #ccc;
-  padding: 20px;
-  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 50px; 
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 250px;
   text-align: center;
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.product-item:hover {
+  transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+}
+
+.product-item button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.product-item h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px; /* Bordas arredondadas nas imagens */
+  margin-bottom: 15px;
 }
 
 button {
@@ -21,11 +65,14 @@ button {
   background-color: #007bff;
   color: white;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
 }
 
 button:hover {
   background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efeito de sombra no botão */
 }
 
 .modal-overlay {
@@ -38,25 +85,25 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Garantir que o modal fique sobre outros conteúdos */
+  z-index: 1000;
 }
 
 .modal-content {
   background-color: white;
   padding: 30px;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  max-width: 30%; /* Ajuste o tamanho máximo para evitar overflow em telas pequenas */
-  max-height: 80%; /* Ajuste o tamanho máximo para evitar overflow */
-  overflow: auto; /* Adiciona rolagem se o conteúdo exceder o tamanho do modal */
-  z-index: 1001; /* Garantir que o conteúdo do modal esteja acima do overlay */
+  max-width: 400px;
+  max-height: 80%;
+  overflow: auto;
+  text-align: center;
 }
 
 .modal-content p {
   margin: 0;
-  text-align: left; /* Ajusta o alinhamento do texto, se necessário */
-  line-height: 1.6; /* Melhora a legibilidade do texto */
-  word-wrap: break-word;
+  line-height: 1.8;
+  color: #555;
+  text-align: left;
 }
 
 .close {
@@ -65,4 +112,10 @@ button:hover {
   right: 10px;
   font-size: 24px;
   cursor: pointer;
+  color: #999;
+  transition: color 0.2s;
+}
+
+.close:hover {
+  color: #333;
 }

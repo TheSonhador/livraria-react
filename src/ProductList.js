@@ -6,7 +6,7 @@ function ProductList({ products, openModal }) {
       {products.map((product) => (
         <div key={product.id} className="product-item">
           <h2>{product.name}</h2>
-          <p>{product.description}</p>
+          <img src={product.img} alt={product.name} />
           <button onClick={() => openModal(product)}>Ver detalhes</button>
         </div>
       ))}
