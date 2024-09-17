@@ -4,6 +4,9 @@ import ProductModal from './ProductModal';  // Importa o componente ProductModal
 import img1 from './img/nadapodemeferir.jpg';  
 import img2 from './img/artedaguerra.jpg';
 import img3 from './img/habitosatomicos.jpg';
+import img4 from './img/arume_a_sua_cama.jpg';
+import img5 from './img/um_dia_sem_reclamar.jpg';
+import img6 from './img/sem_limites.jpg';
 
 // Array de produtos, contendo ID, nome, preço, descrição e imagem de cada produto
 const products = [
@@ -28,7 +31,29 @@ const products = [
     description: 'Hábitos Atômicos oferece um método eficaz para você se aprimorar ― todos os dias. James Clear, um dos mais expoentes especialistas na criação de hábitos, revela as estratégicas práticas que o ensinarão, exatamente, como criar bons hábitos, abandonar os maus e fazer pequenas mudanças de comportamento que levam a resultados impressionantes.',
     img: img3
   },
-];
+  { 
+    id: 4, 
+    name: 'Arrume a sua cama',
+    price: 44.99, 
+    description: '“Arrume a sua cama”, do almirante William McRaven, transformou sua famosa palestra sobre liderança, que viralizou com mais de 10 milhões de visualizações, em um best-seller. Seu livro, baseado em 10 lições do treinamento das forças especiais, alcançou grande sucesso e ficou meses na lista dos mais vendidos do The New York Times.',
+    img: img4
+  },
+  { 
+    id: 5, 
+    name: '#UmDiaSemReclamar',
+    price: 37.99, 
+    description: 'O livro desafia os leitores a passar um dia inteiro sem reclamar, reiniciando a contagem do tempo a cada violação. Este exercício visa aumentar a consciência sobre a ingratidão natural e inclui seis outros exercícios para transformar a forma como enfrentamos nossos problemas.',
+    img: img5
+  },
+  { 
+    id: 6,
+    name: 'Sem Limites',
+    price: 37.99, 
+    description: '“Este livro inovador revela práticas baseadas na ciência e técnicas comprovadas usadas pelos melhores profissionais do planeta para atingir resultados em nível mundial.',
+    img: img6
+  },
+    
+  ];
 
 function App() {
   // Estado que guarda o produto selecionado; começa com null (nenhum produto selecionado)

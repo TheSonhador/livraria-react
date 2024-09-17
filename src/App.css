@@ -2,19 +2,27 @@ body {
   font-family: 'Roboto', sans-serif; /* Tipografia moderna */
   text-align: center;
   background-color: #87b1e7; /* Cor de fundo suave */
-  margin: 0;
-  padding: 20px;
+  margin-bottom: 50px;
+  padding: 0;
 }
 
 h1 {
-  color: #000000;
-  font-size: 2.5rem;
+  color: #ffffff; /* Cor branca para contraste com o fundo azul */
+  font-size: 3rem; /* Tamanho grande para destacar o título */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave para profundidade */
+  background-color: #0056b3; /* Azul mais escuro para complementar o fundo */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas para suavidade */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar do fundo */
+  display: inline-block; /* Ajusta o tamanho do fundo ao conteúdo */
   margin-bottom: 30px;
 }
+
 
 .product-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 270px;
   justify-content: center; /* Centralizar os itens */
   gap: 30px;
 }
