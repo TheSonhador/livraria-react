@@ -13,6 +13,7 @@ function ProductModal({ product, onClose }) {
       // Pega as dimensões do modal
       const { offsetWidth, offsetHeight } = modalRef.current;
       
+      modalRef.current.style.position = 'fixed';
       // Centraliza o modal calculando a posição com base na altura e largura
       modalRef.current.style.top = `calc(50% - ${offsetHeight / 2}px)`;
       modalRef.current.style.left = `calc(50% - ${offsetWidth / 2}px)`;
